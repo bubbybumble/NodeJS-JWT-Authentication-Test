@@ -64,6 +64,8 @@
           history.pushState(null, null, 'dashboard');
           document.querySelector('h1.row').innerHTML = 'Dashboard';
           document.querySelector('main').innerHTML = res.data.text;
+        } else {
+          window.location.replace(window.location.origin);
         }
       });
     }
@@ -79,6 +81,8 @@
           history.pushState(null, null, 'settings');
           document.querySelector('h1.row').innerHTML = 'Settings';
           document.querySelector('main').innerHTML = res.data.text;
+        } else {
+          window.location.replace(window.location.origin);
         }
       });
     }
